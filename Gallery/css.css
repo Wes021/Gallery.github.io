@@ -1,6 +1,7 @@
 /* General Styles */
 * {
     font-family: Nunito, sans-serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: black;
     
 }
 
@@ -21,9 +23,11 @@ body {
     justify-content: space-between; 
     align-items: center;
     width: 100%;
-    border-style: solid;
+    border-bottom: 1px solid white;
+    background-color: black;
     padding: 5px;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -35,7 +39,7 @@ body {
 }
 
 .logoAndname img{
-    width:60px ;
+    width:100px ;
     height: auto;
 
 }
@@ -48,9 +52,17 @@ body {
 
 }
 
-.links a{
+.links a {
+    cursor: pointer;
     text-decoration: none;
+    color: white;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.links a:hover {
+    background-color: white;
     color: black;
+    
 }
 
 
@@ -67,11 +79,23 @@ body {
 }
 
 .rubbishcontent{
-    width: 700px;
+    display: flex;
+    width: 100%;
     height: auto;
-    border-style: solid;
+   
+    border-bottom: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
+#text{
+    width: auto;
+    font-size: xx-large;
+    font-weight: bolder;
+    
+}
 .gallery{
     display: flex;
     justify-content: center;
@@ -79,20 +103,33 @@ body {
     flex-direction: column;
     width: 100%; /* Ensures full width */
     padding: 20px; /* Adds some spacing */
-    border-style: solid;
+    
     gap: 60px;
 }
 #filters {
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
     width: 100%;
     padding: 10px 15px;
-    border-style: solid;
+    border-bottom: 1px solid white;
+    transition: color 0.5s, background-color 0.5s;
+
 }
+
+
 #filters p{
-    border-style: solid;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    
+}
+
+
+#filters p:hover{
+    background-color: white;
+    color: black;
 }
 
 #photos{
@@ -101,15 +138,68 @@ body {
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
-    padding: 15px;
-    gap: 55px;
+    width: 100%;
+    padding: 10px;
+    gap:30px;
     border-style: solid;
 }
 
 #photos img{
-    width: 200px;
-    height: auto;
+    width: 250px;
+    height: 150px;
+    
 }
 
 
+.imagecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+
+
+.imagecontainer:hover {
+    transform: scale(2); /* Enlarges the image by 20% */
+    background-color: black;
+    
+    
+}
+
+
+
+
+#phototext{
+
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+
+    align-self: last baseline;
+    width: 100%;
+    margin-bottom: 5px;
+    border-style: solid;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding: 20px;
+
+}
+
+p, a{
+    color: white;
+}
