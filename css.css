@@ -205,4 +205,86 @@ p, a{
 }
 
 
+@media screen and (max-width: 768px) {
+    /* Ensure body content is centered and not too wide */
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+    }
 
+    /* Navbar: Stack elements vertically on small screens */
+    .navbar {
+        display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid white;
+    background-color: black;
+    
+    margin-top: 5px;
+    margin-bottom: 10px;
+    }
+
+    .logoAndname {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .logoAndname img {
+        width: 80px; /* Adjust logo size */
+    }
+
+    .links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    /* Main Content: Ensure it's responsive */
+    .Main {
+        padding: 10px;
+    }
+
+    #text {
+        font-size: large;
+        text-align: center;
+    }
+
+    /* Gallery: Adjust layout for smaller screens */
+    .gallery {
+        gap: 30px;
+    }
+
+    #filters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #photos {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #photos img {
+        width: 100%; /* Make images take full width */
+        max-width: 300px; /* Limit size */
+        height: auto;
+    }
+
+    .imagecontainer:hover {
+        transform: scale(1.2); /* Reduce zoom effect for smaller screens */
+    }
+
+    /* Footer: Stack items vertically */
+    .footer {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+}
