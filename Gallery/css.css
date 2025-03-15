@@ -43,7 +43,8 @@ body {
 .links {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 25px;
+    margin-right: 10px;
 
 }
 
@@ -51,6 +52,8 @@ body {
     text-decoration: none;
     color: black;
 }
+
+
 /*  NAVBAR */
 
 .Main {
