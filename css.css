@@ -205,7 +205,7 @@ p, a{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* Ensure body content is centered and not too wide */
     body {
         display: flex;
